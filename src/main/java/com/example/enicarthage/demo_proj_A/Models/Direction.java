@@ -1,4 +1,6 @@
 package com.example.enicarthage.demo_proj_A.Models;
+
+
 import jakarta.persistence.*;
 import lombok.*;
 import java.util.List;
@@ -7,7 +9,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Teacher {
+public class Direction {
     @Id
     private String id;
     private String nom;
@@ -15,18 +17,15 @@ public class Teacher {
     private String email;
     private String motDePasse;
 
-    @OneToMany(mappedBy = "professeur")
+    @OneToMany(mappedBy = "direction")
     private List<SchoolClass> classes;
 
-    @OneToMany(mappedBy = "professeur")
-    private List<Note> notes;
+    @OneToMany(mappedBy = "direction")
+    private List<Speciality> specialites;
 
-    @ManyToMany
-    @JoinTable(
-            name = "professeur_module",
-            joinColumns = @JoinColumn(name = "professeur_id"),
-            inverseJoinColumns = @JoinColumn(name = "module_id")
-    )
+    @OneToMany(mappedBy = "direction")
     private List<Module> modules;
-}
 
+    @OneToMany(mappedBy = "direction")
+    private List<Certification> certifications;
+}

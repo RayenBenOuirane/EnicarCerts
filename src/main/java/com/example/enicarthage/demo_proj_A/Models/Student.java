@@ -7,13 +7,15 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Table (name = "student")
 public class Student {
     @Id
-    private String id;
+    private int id;
     private String nom;
     private String prenom;
     private String annee;
-
+    private String password;
+    private String email;
     @ManyToOne
     @JoinColumn(name = "classe_id")
     private SchoolClass classe;

@@ -9,7 +9,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Module {
     @Id
-    private String id;
+    private int id;
     private String langue;
     private String niveau;
     private String semestre;

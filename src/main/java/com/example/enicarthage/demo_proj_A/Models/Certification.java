@@ -9,7 +9,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Certification {
     @Id
-    private String id;
+    private int id;
     private String type;
     private String score;
     private String statut;

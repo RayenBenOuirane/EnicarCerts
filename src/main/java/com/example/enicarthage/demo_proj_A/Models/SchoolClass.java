@@ -9,7 +9,7 @@ import java.util.List;
 @AllArgsConstructor
 public class SchoolClass {
     @Id
-    private String id;
+    private int id;
     private String nom;
     private String annee;
 

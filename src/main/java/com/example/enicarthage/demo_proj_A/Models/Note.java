@@ -10,7 +10,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Note {
     @Id
-    private String id;
+    private int id;
     private String note;
     private String date;
 

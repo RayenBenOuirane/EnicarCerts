@@ -9,11 +9,11 @@ import java.util.List;
 @AllArgsConstructor
 public class Teacher {
     @Id
-    private String id;
+    private int id;
     private String nom;
     private String prenom;
     private String email;
-    private String motDePasse;
+    private String password;
 
     @OneToMany(mappedBy = "professeur")
     private List<SchoolClass> classes;

@@ -15,7 +15,7 @@ public class Direction {
     private String nom;
     private String prenom;
     private String email;
-    private String motDePasse;
+    private String password;
 
     @OneToMany(mappedBy = "direction")
     private List<SchoolClass> classes;

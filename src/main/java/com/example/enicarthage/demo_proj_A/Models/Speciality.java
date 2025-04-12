@@ -9,7 +9,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Speciality {
     @Id
-    private String id;
+    private int id;
     private String nom;
 
     @ManyToOne

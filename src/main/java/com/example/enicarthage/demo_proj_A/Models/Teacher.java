@@ -13,7 +13,7 @@ public class Teacher {
     private String nom;
     private String prenom;
     private String email;
-    private String password;
+    private String motDePasse;
 
     @OneToMany(mappedBy = "professeur")
     private List<SchoolClass> classes;
